@@ -1,0 +1,31 @@
+logging:
+  level:
+    org:
+      atmosphere: warn
+
+vaadin:
+  launch-browser: true
+  allowed-packages: com.vaadin,org.vaadin,com.example.application
+
+spring:
+  mustache:
+    check-template-location: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rummy_game
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+application:
+  name: rummy
+server:
+  port: 8088

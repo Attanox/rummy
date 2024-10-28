@@ -16,6 +16,16 @@
       "name": "Attach to Application started using Maven",
       "hostName": "localhost",
       "port": 5247
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<rummy-game>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.application.Application",
+      "projectName": "rummy-game",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
